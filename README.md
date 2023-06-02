@@ -97,3 +97,34 @@ Generally you'll want to keep these things in mind as you run these:
 * There will be some git operations done in various tasks. These are used against a Google Source Repository, not GitHuc.
 * Once again, if you don't understand what the scripts do and are not able to diagnose and debug any problems, you might have trouble with this. This is why doing dry runs in Argolis are highly suggested.
 
+## Learning Links
+These links were used to learn about the products and commands needed in each of the Tasks. They are provided here for your reference. You are highly encouraged to read these and learn what the scripts are doing:
+
+### QwikLab and This Repo
+<https://partner.cloudskillsboost.google/focuses/18952?parent=catalog>
+<https://github.com/gfilicetti/L300-appmod-lab-scripts>
+
+### Prerequisite QwikLabs
+<https://partner.cloudskillsboost.google/focuses/14780?parent=catalog>
+<https://partner.cloudskillsboost.google/focuses/14659?parent=catalog>
+<https://partner.cloudskillsboost.google/focuses/14665?parent=catalog>
+
+### Reference material
+<https://cloud.google.com/sdk/gcloud/reference/container/clusters/describe>
+<https://cloud.google.com/migrate/containers/docs/migrate-vm#migctl_5>
+<https://cloud.google.com/migrate/containers/docs/review-deployment-files>
+<https://cloud.google.com/sdk/gcloud/reference/source/repos/create>
+<https://articles.assembla.com/en/articles/1136998-how-to-add-a-new-remote-to-your-git-repo>
+<https://cloud.google.com/service-mesh/v1.15/docs/unified-install/anthos-service-mesh-prerequisites>
+<https://cloud.google.com/build/docs/cloud-build-service-account>
+<https://cloud.google.com/build/docs/securing-builds/configure-access-for-cloud-build-service-account>
+<https://cloud.google.com/sdk/gcloud/reference/beta/builds/triggers/create/cloud-source-repositories>
+<https://github.com/GoogleCloudPlatform/cloud-builders/blob/master/kubectl/examples/pods-list/cloudbuild.yaml>
+<https://medium.com/platformer-blog/ci-cd-with-gke-and-google-cloud-build-98a797ecf346>
+<https://cloud.google.com/service-mesh/v1.16/docs/unified-install/install-dependent-tools#download_asmcli>
+<https://cloud.google.com/service-mesh/v1.16/docs/anthos-service-mesh-proxy-injection>
+<https://cloud.google.com/service-mesh/docs/unified-install/gke-install-multi-cluster#create_firewall_rule>
+<https://cloud.google.com/service-mesh/docs/unified-install/gke-install-multi-cluster#endpoint-discovery-declarative-api>
+<https://istio.io/latest/docs/reference/config/networking/destination-rule/>
+<https://istio.io/latest/docs/reference/config/networking/virtual-service/>
+<https://cloud.google.com/service-mesh/docs/anthos-service-mesh-proxy-injection>
