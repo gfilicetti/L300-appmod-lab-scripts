@@ -51,3 +51,11 @@ gcloud builds triggers create cloud-source-repositories --name=$TRIGGER_NAME \
   --build-config=$BUILD_CONFIG_FILE \
   --repo=$GSR_REPO_NAME \
   --branch-pattern="^cymbal-dev$"
+
+
+#trigger pipeline with a git push
+touch trigger-pipeline.txt
+git add .
+git commit -m 'create file to push to trigger pipeline'
+git push -u origin $GSR_BRANCH_NAME
+
