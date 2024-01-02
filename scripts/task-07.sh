@@ -14,6 +14,8 @@ ARTIFACT_DIR=artifacts
 # NOTE !!!!!!!!!!!!!!
 # Once Step 6 is fully complete, go to Container Registry in the Console, go to Settings and make it public
 # Otherwise you'll get ImageBackOff errors
+BUCKET=$(gsutil ls | grep appspot.com | awk '{print $1}')
+gsutil iam ch allUsers:objectViewer gs://${BUCKET}
 # -------------------
 
 # get credential for the processing cluster so we can use migctl
