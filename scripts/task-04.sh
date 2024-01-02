@@ -11,6 +11,7 @@ VM_NAME=ledgermonolith-service
 
 # NOTE!!!!!!!!!!!!!!!!!!!
 # Make sure that you stop the Ledger Monolith compute instance before starting the migration job.
+gcloud compute instances stop $VM_NAME
 # -----------------------
 
 # run a migration job that we just set up
