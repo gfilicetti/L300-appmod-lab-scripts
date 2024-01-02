@@ -6,7 +6,7 @@ ZONE=us-central1-a
 GKE_DEV_CLUSTER_NAME=cymbal-bank-dev
 GKE_DEV_NODES=2
 CHANNEL=stable
-CP_VERSION=1.23
+CP_VERSION=1.24
 NODE_VM_TYPE=e2-standard-4
 
 # create the DEV cluster
@@ -15,7 +15,7 @@ gcloud container clusters create $GKE_DEV_CLUSTER_NAME \
   --machine-type=$NODE_VM_TYPE --num-nodes=$GKE_DEV_NODES \
   --release-channel=$CHANNEL --cluster-version=$CP_VERSION \
   --monitoring=SYSTEM --logging=SYSTEM,WORKLOAD --subnetwork=default \
-  --tags=$GKE_DEV_CLUSTER_NAME --labels csm=
+  --tags=$GKE_DEV_CLUSTER_NAME
 
 # get kubectl context for this cluster
 gcloud container clusters get-credentials $GKE_DEV_CLUSTER_NAME \
