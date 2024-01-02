@@ -8,6 +8,9 @@ OUTPUT_DIR=../asm
 ASMCLI_INSTALL_URL=https://storage.googleapis.com/csm-artifacts/asm/asmcli_1.16 
 ASMCLI_CMD=./asmcli
 
+#install netcat on cloud shell as it is used during asm validations (optional)
+sudo apt install -y netcat
+
 # download asmcli fresh to use it
 curl $ASMCLI_INSTALL_URL > $ASMCLI_CMD
 chmod 755 $ASMCLI_CMD
