@@ -22,6 +22,7 @@ jsonpath={.items[*].metadata.labels.'istio\.io\/rev'}'{"\n"}')
 # Add sidecar injection to all our namespaces
 # NOTE: don't worry if it couldn't find istio-injection, we're just trying to remove it IF it's there
 kubectl label namespace $NAMESPACE istio-injection-istio.io/rev=$ISTIO_REV --overwrite
-
+# in my case namespace had to be labeled as an istio managed ns:
+kubectl label namespace $NAMESPACE istio.io/rev=$ISTIO_REV --overwrite
 # restart all pods
 kubectl rollout restart deployment
