@@ -6,7 +6,7 @@ ZONE=us-central1-a
 GKE_PROD_CLUSTER_NAME=cymbal-bank-prod
 GKE_PROD_NODES=4
 CHANNEL=stable
-CP_VERSION=1.23
+CP_VERSION=1.24
 NODE_VM_TYPE=e2-standard-4
 
 # create a new GKE cluster according to specs
@@ -15,7 +15,7 @@ gcloud container clusters create $GKE_PROD_CLUSTER_NAME \
   --machine-type=$NODE_VM_TYPE --num-nodes=$GKE_PROD_NODES \
   --release-channel=$CHANNEL --cluster-version=$CP_VERSION \
   --monitoring=SYSTEM --logging=SYSTEM,WORKLOAD --subnetwork=default \
-  --tags=$GKE_PROD_CLUSTER_NAME --labels csm=
+  --tags=$GKE_PROD_CLUSTER_NAME
 
 # get kubectl context for this cluster
 gcloud container clusters get-credentials $GKE_PROD_CLUSTER_NAME \
