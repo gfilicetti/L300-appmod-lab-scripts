@@ -53,3 +53,12 @@ gcloud builds triggers create cloud-source-repositories --name=$TRIGGER_NAME \
   --build-config=$BUILD_CONFIG_FILE \
   --repo=$GSR_REPO_NAME \
   --branch-pattern="^main$"
+
+
+
+#trigger pipeline with a test push
+touch trigger-pipeline.txt
+git add .
+git commit -m 'file to push to create cicd pipeline'
+git push -u origin main
+
